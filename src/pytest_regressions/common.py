@@ -159,7 +159,7 @@ def perform_regression_check(
                     source_filename,
                     aux_created,
                 )
-                pytest.fail(msg)
+                pytest.xfail(msg)
             else:
                 dump_aux_fn(obtained_filename)
                 raise
